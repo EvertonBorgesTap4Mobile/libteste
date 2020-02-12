@@ -6,4 +6,8 @@ public class Teste {
         System.out.println("Hello World");
     }
 
+    public static void print(String text) {
+        System.out.println(text);
+    }
+
 }

@@ -10,7 +10,7 @@ ext {
 
     publishedGroupId = 'br.com.tap4mobile' // Group ID of the SDK which will be added in implementation line of gradle
     artifact = 'libteste' // Artifact ID of the SDK which will be added in implementation line of gradle
-    libraryVersion = '0.0.2' // Version of the library you created in Bintray
+    libraryVersion = '0.0.4' // Version of the library you created in Bintray
 
     libraryName = 'LibTeste' // It is generally the module name
     libraryDescription = 'Lib Teste for Tap4Mobile.' // Small description of the library
@@ -70,3 +70,7 @@ dependencies {
 }
 
 apply from: 'bintray.script'
+
+tasks.withType(Javadoc).all {
+    enabled = false
+}
